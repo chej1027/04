@@ -7,8 +7,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <style>
-    
-    section {
+        section {
             margin-bottom: 40px;
         }
 
@@ -19,50 +18,56 @@
         }
 
         .popular-products, .latest-products, .customer-reviews {
-    text-align: center;
-}
+            text-align: center;
+        }
 
-.popular-products h2, .latest-products h2, .customer-reviews h2 {
-    margin-bottom: 20px;
-    font-size: 1.5em;
-    color: #333;
-}
+        .popular-products h2, .latest-products h2, .customer-reviews h2 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: #333;
+        }
 
-.product {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    width: 200px;
-    text-align: center;
-    background-color: #f9f9f9;
-    height: 300px;
-    float: left;
-}
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
-.product img {
-    max-width: 100%;
-    border-radius: 10px;
-    width: 100px;
-    height: auto;
-}
+        .product {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            background-color: #f9f9f9;
+            height: 300px;
+            word-wrap: break-word;
+            overflow: hidden;
+        }
 
-.product h3 {
-    margin: 10px 0;
-    font-size: 1.2em;
-    color: black;
-}
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+            width: 100px;
+            height: auto;
+        }
 
-.product p {
-    color: #888;
-    font-size: 10pt;
-    line-height: 20px;
-}
+        .product h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: black;
+        }
 
+        .product p {
+            color: #888;
+            font-size: 10pt;
+            line-height: 20px;
+        }
     </style>
 </head>
 <body>
@@ -95,25 +100,26 @@
                 </div>
             </nav>
         </div>
-    <section class="popular-products">
-        <h2>프로젝트 소감</h2>
-        <div class="product">
-            <h3>천은지</h3>
-            <p>예전에 웹디자인 기능사를 잠깐 공부했었는데 많이 까먹었지만, 이번 디지털 프로그래밍 수업을 들으면서 다시 기억이 떠올랐습니다. 팀원들과 함께 레이아웃을 만들어보는 과정이 재미있었습니다. 오류가 날 때는 어렵고 힘들었지만, 하나하나 코드를 작성해 원하는 레이아웃을 완성했을 때는 뿌듯했습니다. 그리고 팀원분들이 잘 따라와 주셔서 감사했습니다!</p>
-        </div>
-        <div class="product">
-            <h3>임지훈</h3>
-            <p>지난 학기에 html과 css를 배우지 않고 자바스크립트를 먼저 배워서
-힘들었던 기억이 있는데 이번에 기말 프로젝트를 진행하면서 부족했던 html과 css에 대한 지식이 채워진 것 같아 너무 유익했고, 열정적인 팀원분들과 함께해서 더욱 재미있고 보람찬 시간이었습니다.</p>
-        </div>
-        <div class="product">
-            <h3>곽수진</h3>
-            <p>직접 홈페이지를 구현해 보니 생각보다 할 게 많았고 어려웠다. 잡지 그대로 구현하기 어려워서 웹 페이지에 맞는 레이아웃으로 수정한 후 코딩했는데, 생각대로 나오지 않아 계속 찾아보면서 코딩했다. 전에 UX/UI를 배운 적이 있었는데 그때 웹 디자인을 할 때에는 디자인적인 부분만 신경을 썼었다. html과 CSS를 배우고 나니 실제 구현 여부를 생각하며 레이아웃 구성할 수 있을 것 같다. 처음 배우는 분야라 힘들었지만, 코딩이 피드백이 빠르고 매우 체계적이라 이 지점에서 오히려 편안하게 코딩했던 것 같다. 많이 배울 수 있었던 과제였다.</p>
-        </div>
-    </section>
-         <div id="footer">
-             <p> 2024 디지털프로그래밍 A반 기말프로젝트_9조 천은지, 임지훈, 곽수진</p>
+        <section class="popular-products">
+            <h2>프로젝트 소감</h2>
+            <div class="products-container">
+                <div class="product">
+                    <h3>천은지</h3>
+                    <p>예전에 웹디자인 기능사를 잠깐 공부했었는데 많이 까먹었지만, 이번 디지털 프로그래밍 수업을 들으면서 다시 기억이 떠올랐습니다. 팀원들과 함께 레이아웃을 만들어보는 과정이 재미있었습니다. 오류가 날 때는 어렵고 힘들었지만, 하나하나 코드를 작성해 원하는 레이아웃을 완성했을 때는 뿌듯했습니다. 그리고 팀원분들이 잘 따라와 주셔서 감사했습니다!</p>
+                </div>
+                <div class="product">
+                    <h3>임지훈</h3>
+                    <p>지난 학기에 html과 css를 배우지 않고 자바스크립트를 먼저 배워서 힘들었던 기억이 있는데 이번에 기말 프로젝트를 진행하면서 부족했던 html과 css에 대한 지식이 채워진 것 같아 너무 유익했고, 열정적인 팀원분들과 함께해서 더욱 재미있고 보람찬 시간이었습니다.</p>
+                </div>
+                <div class="product">
+                    <h3>곽수진</h3>
+                    <p>직접 홈페이지를 구현해 보니 생각보다 할 게 많았고 어려웠다. 잡지 그대로 구현하기 어려워서 웹 페이지에 맞는 레이아웃으로 수정한 후 코딩했는데, 생각대로 나오지 않아 계속 찾아보면서 코딩했다. 전에 UX/UI를 배운 적이 있었는데 그때 웹 디자인을 할 때에는 디자인적인 부분만 신경을 썼었다. html과 CSS를 배우고 나니 실제 구현 여부를 생각하며 레이아웃 구성할 수 있을 것 같다. 처음 배우는 분야라 힘들었지만, 코딩이 피드백이 빠르고 매우 체계적이라 이 지점에서 오히려 편안하게 코딩했던 것 같다. 많이 배울 수 있었던 과제였다.</p>
+                </div>
             </div>
+        </section>
+        <div id="footer">
+            <p>2024 디지털프로그래밍 A반 기말프로젝트_9조 천은지, 임지훈, 곽수진</p>
         </div>
+    </div>
 </body>
 </html>
