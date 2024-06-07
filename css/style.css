@@ -95,3 +95,6 @@ header #logo img {
     height: 1.5px;
     background-color: #000; 
 }
+h2 {
+    margin-top: 40px;
+}
