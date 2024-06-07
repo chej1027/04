@@ -111,7 +111,7 @@ h2 {
     margin-left: 20px;
     line-height: 1.6;
 }
-.footer-content span {
+.footer-content ,p {
     font-size: 14pt;
     padding-left: 20px;
     margin: 5px 0;
