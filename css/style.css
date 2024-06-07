@@ -104,6 +104,7 @@ h2 {
     background-color: gainsboro;
     text-align: left;
     padding: 20px 0;
+    clear: both;
 }
 .footer-content {
     width: 100%;
